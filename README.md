@@ -4,7 +4,7 @@
 This project focuses on designing and implementing an end-to-end Data Warehouse (DWH) for a "Central Superstore" retail dataset using a Medallion Architecture. The SQL-based pipeline systematically processes data through Staging, Bronze, Silver, and Gold layers to deliver clean, optimized, and business-ready data structures.
 
 ## ✦ Problem Statement
-Raw retail data initially supplied in an Excel spreadsheet format requires a scalable and automated ETL (Extract, Transform, Load) pipeline to be useful for analytics. The challenge involves converting this file format, bulk-loading the data into a database, systematically cleaning it to handle anomalies (such as outliers, missing fields, and invalid entries), and ultimately restructuring the flat data into a Star Schema optimized for Business Intelligence (BI) reporting[cite: 18, 19, 20].
+Raw retail data initially supplied in an Excel spreadsheet format requires a scalable and automated ETL (Extract, Transform, Load) pipeline to be useful for analytics. The challenge involves converting this file format, bulk-loading the data into a database, systematically cleaning it to handle anomalies (such as outliers, missing fields, and invalid entries), and ultimately restructuring the flat data into a Star Schema optimized for Business Intelligence (BI) reporting.
 
 ## ✦ Goals
 * **Data Ingestion & Formatting:** Utilize a Python script to convert the source `.xlsx` file into a `.csv` format, enabling high-performance SQL `BULK INSERT` operations into the staging layer.
@@ -24,4 +24,4 @@ Raw retail data initially supplied in an Excel spreadsheet format requires a sca
 * **Scripting & Automation:** Python (Pandas library) for `.xlsx` to `.csv` format transformation.
 
 ## ✦ Conclusion
-The implementation of this Data Warehouse successfully bridges the gap between raw transactional spreadsheets and strategic business intelligence. By enforcing strict, automated data quality checks in the Silver layer and restructuring the data into an optimized Star Schema within the Gold layer, the ETL pipeline provides a reliable, high-performance foundation for analyzing sales trends, customer behavior, and product profitability[cite: 19, 21].
+The implementation of this Data Warehouse successfully bridges the gap between raw transactional spreadsheets and strategic business intelligence. By enforcing strict, automated data quality checks in the Silver layer and restructuring the data into an optimized Star Schema within the Gold layer, the ETL pipeline provides a reliable, high-performance foundation for analyzing sales trends, customer behavior, and product profitability.
